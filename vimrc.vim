@@ -44,6 +44,9 @@ set encoding=utf8
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 " """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" make backspace work like most other apps
+set backspace=2 
+
 " Use spaces instead of tabs
 set expandtab
 
@@ -57,7 +60,6 @@ set tabstop=2
 " Linebreak on 500 characters
 set lbr
 set tw=500
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin settings 
@@ -83,6 +85,14 @@ let g:go_highlight_fields = 0
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 0
 let g:go_highlight_build_constraints = 0 
+
+let g:go_fmt_command = "goimports"
+let g:go_snippet_case_type = "camelcase"
+
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+
+let g:go_auto_sameids = 1
 
 map <C-n> :cnext<CR>
 map <C-m> :cprevious<CR>
