@@ -54,7 +54,7 @@ set encoding=utf8
 set backspace=2 
 
 " Use spaces instead of tabs
-set expandtab
+" set expandtab
 
 " Be smart when using tabs ;)
 set smarttab
