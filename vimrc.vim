@@ -38,10 +38,10 @@ set tm=500
 " Enable syntax highlighting
 syntax on
 
-try
-    color dracula 
-catch
-endtry
+" try
+"    color dracula 
+" catch
+" endtry
 
 
 " Set utf8 as standard encoding and en_US as the standard language
