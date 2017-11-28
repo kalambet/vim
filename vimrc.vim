@@ -38,10 +38,10 @@ set tm=500
 " Enable syntax highlighting
 syntax on
 
-" try
-"    color dracula 
-" catch
-" endtry
+try
+   color dracula 
+catch
+endtry
 
 
 " Set utf8 as standard encoding and en_US as the standard language
@@ -81,7 +81,7 @@ let g:ackprg = 'ag --vimgrep --smart-case'
 " Airline
 set laststatus=2
 set ttimeoutlen=50
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " vim-go
 set autowrite
